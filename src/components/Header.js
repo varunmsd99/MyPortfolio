@@ -1,0 +1,80 @@
+import React from "react";
+import { useState } from "react";
+import logo from "../images/vkLogo.png";
+import { HeaderData } from "../utils/data";
+import { Link } from "react-scroll";
+import { Equal, X } from "lucide-react";
+
+const Header = () => {
+  const [nav, setNav] = useState(false);
+  const toggleNav = () => setNav(!nav);
+  return (
+    <div className="h-10 bg-[#161617b3] w-full top-0 left-0 right-0 fixed z-20 flex backdrop-blur-lg justify-center md:justify-between">
+      <Link
+        to="home"
+        spy={true}
+        smooth={true}
+        duration={500}
+        className="self-center mx-5 cursor-pointer h-full"
+      >
+        <img
+          src={logo}
+          alt="logo"
+          className="h-[90%] transition-transform duration-300 ease-cubic-bezier(.215,.61,.355,1) hover:scale-110"
+        />
+      </Link>
+      <div className="flex items-center md:hidden">
+        {HeaderData.map((x) => {
+          return (
+            <Link
+              to={x.id}
+              spy={true}
+              smooth={true}
+              duration={500}
+              key={x.id}
+              className="text-[#dfdfdf] mx-5 text-xs leading-4 cursor-pointer hover:text-white"
+            >
+              {x.text}
+            </Link>
+          );
+        })}
+      </div>
+      <div className="self-center mr-4 md:flex hidden" onClick={toggleNav}>
+        <Equal size={28} strokeWidth={0.5} color="#dfdfdf" />
+      </div>
+      <div
+        className={`${
+          nav ? `translate-y-0`
+            : "-translate-y-full"
+        } fixed h-screen left-0 top-0 w-full bg-black flex flex-col items-center duration-500`}
+      >
+        <X
+          size={28}
+          strokeWidth={0.5}
+          color="#dfdfdf"
+          onClick={toggleNav}
+          className="h-10 flex self-end mr-4"
+        />
+        <div className={`flex self-start flex-col min-h-50vh max-h-fit mt-12`}>
+        {HeaderData.map((x) => {
+          return (
+            <Link
+              to={x.id}
+              spy={true}
+              smooth={true}
+              duration={500}
+              key={x.id}
+              onClick={toggleNav}
+              className="text-[#dfdfdf] text-lg font-light mx-8 my-3 leading-4 cursor-pointer hover:text-white"
+            >
+              {x.text}
+            </Link>
+          );
+        })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
