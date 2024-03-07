@@ -28,7 +28,7 @@ export const HeaderData = [
   ];
 export const HomePageData = {
   name: "Varun Kumar",
-  title: "Front End Engineer. Tech Enthusiast",
+  title: "Front End Developer. Tech Enthusiast",
   links: [
     {
       text:"Contact me",
@@ -36,7 +36,7 @@ export const HomePageData = {
     },
     {
       text:"Resume",
-      url:""
+      url:"/Varun_Resume.pdf"
     }
   ]
 }
