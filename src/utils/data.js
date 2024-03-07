@@ -1,9 +1,5 @@
 import { Linkedin, GithubIcon, Twitter} from 'lucide-react'
 
-//export const serviceApiKey = process.env.SERVICE_ID;
-export const templateApiKey = process.env.TEMPLATE_ID;
-//export const publicApiKey = process.env.publicKey;
-
 export const HeaderData = [
   {
     id: "home",
@@ -30,7 +26,21 @@ export const HeaderData = [
       text: "Contact",
     },
   ];
-  export const contactData = [
+export const HomePageData = {
+  name: "Varun Kumar",
+  title: "Front End Engineer. Tech Enthusiast",
+  links: [
+    {
+      text:"Contact me",
+      url:"contact"
+    },
+    {
+      text:"Resume",
+      url:""
+    }
+  ]
+}
+export const contactData = [
     {
       url: "https://github.com/varunmsd99",
       icon: <GithubIcon size={48} color='#707070' strokeWidth={1} className='mb-3' />,

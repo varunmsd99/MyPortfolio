@@ -9,7 +9,7 @@ const Header = () => {
   const [nav, setNav] = useState(false);
   const toggleNav = () => setNav(!nav);
   return (
-    <div className="h-10 bg-[#161617b3] w-full top-0 left-0 right-0 fixed z-20 flex backdrop-blur-lg justify-center md:justify-between">
+    <div className="h-10 bg-[#161617b3] w-full top-0 left-0 right-0 fixed z-20 flex backdrop-blur-md justify-center md:justify-between">
       <Link
         to="home"
         spy={true}
@@ -46,7 +46,7 @@ const Header = () => {
         className={`${
           nav ? `translate-y-0`
             : "-translate-y-full"
-        } fixed h-screen left-0 top-0 w-full bg-black flex flex-col items-center duration-500`}
+        } fixed h-[100dvh] left-0 top-0 w-full bg-black flex flex-col items-center duration-300`}
       >
         <X
           size={28}
@@ -62,10 +62,10 @@ const Header = () => {
               to={x.id}
               spy={true}
               smooth={true}
-              duration={500}
+              duration={1000}
               key={x.id}
               onClick={toggleNav}
-              className="text-[#dfdfdf] text-lg font-light mx-8 my-3 leading-4 cursor-pointer hover:text-white"
+              className="text-[#dfdfdf] text-2xl font-light mx-8 my-4 tracking-wide leading-5 cursor-pointer hover:text-white"
             >
               {x.text}
             </Link>

@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^1.0.55",
     "autoprefixer": "^10.4.17",
     "lucide-react": "^0.323.0",
     "react": "^18.2.0",
