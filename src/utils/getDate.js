@@ -9,26 +9,18 @@ const DateTimeDisplay = () => {
 
     return () => clearInterval(intervalId);
   }, []);
-
-  const formatDate = (date) => {
+  const formatDateTime = (date) => {
     const options = {
-      month: 'short',
       day: 'numeric',
+      month: 'short',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: false,
     };
-    return date.toLocaleDateString('en-IN', options);
+    return date.toLocaleDateString('en-US', options);
   };
-
-  const formatTime = (date) => {
-    const options = {
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false
-    };
-    return date.toLocaleTimeString('en-IN', options);
-  };
-
   return (
-    <h2 className='text-white text-xs'>{formatDate(currentDateTime)} &nbsp;{formatTime(currentDateTime)}</h2>
+    <h2 className='text-white text-xs'>{formatDateTime(currentDateTime)}</h2>
   );
 };
 

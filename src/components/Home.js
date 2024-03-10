@@ -1,5 +1,5 @@
 import React from "react";
-import SplineObject from "./SplineObject";
+import SplineHome from "./SplineHome";
 import { HomePageData } from "../utils/data";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-scroll";
@@ -10,8 +10,11 @@ const Home = () => {
 
   return (
     <div className="min-h-[100dvh] max-h-fit bg-black flex flex-col" id="home">
-      <div className="flex-1 flex items-center justify-between mt-12 md:flex-col">
-        <div className="flex flex-1 flex-col items-center justify-center text-white md:self-center md:justify-self-center">
+      <div className="flex-1 flex items-center justify-between flex-col">
+        <div className="flex-1 flex items-center w-[60vw] md:w-screen">
+          <SplineHome />
+        </div>
+        <div className="flex flex-1 flex-col items-center text-white">
           <h1 className="font-black text-6xl md:text-4xl tracking-wider">{HomePageData.name}</h1>
           <h2 className="pt-3 text-2xl font-light md:text-xl tracking-tight">{HomePageData.title}</h2>
           <div className="flex">
@@ -27,9 +30,6 @@ const Home = () => {
             </Link>))
           })}
           </div>
-        </div>
-        <div className="flex flex-1 items-start w-full">
-          <SplineObject className=""/>
         </div>
       </div>
       <div className="text-white text-end py-2 px-3 flex self-end items-center">
