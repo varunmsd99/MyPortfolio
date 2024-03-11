@@ -1,5 +1,7 @@
 import { Linkedin, GithubIcon, Twitter} from 'lucide-react'
-
+import foodVilla from '../images/foodVilla.png'
+import portfolio from '../images/portfolio.png'
+import wipro from '../images/wipro.png'
 export const HeaderData = [
   {
     id: "home",
@@ -25,10 +27,11 @@ export const HeaderData = [
       id: "contact",
       text: "Contact",
     },
-  ];
-export const HomePageData = {
+];
+export const UserData = {
   name: "Varun Kumar",
-  title: "Front End Developer. Tech Enthusiast",
+  title: "Front End Developer . Tech Enthusiast",
+  about: "I am based out of Vizag, the city of Destiny from Andhra Pradesh. I am currently working as a Software Engineer at Wipro with around 2+ years of experience. I have expertise in frontend technologies like JavaScript, React and few utilitarian libraries useful for development. I believe in hard work and am passionate about open source. I Love learning new stuff every day and growing in this field, and I am confident that my unique perspective, skills and abilities will make me a valuable asset to any team.",
   links: [
     {
       text:"Contact me",
@@ -40,6 +43,12 @@ export const HomePageData = {
     }
   ]
 }
+export const SkillsData = [
+  { title: "Languages", text: "JS, TS, Java and C." },
+  { title: "Markup Languages", text: "HTML and CSS." },
+  { title: "Libraries", text: "React and TailwindCSS." },
+  { title: "Other", text: "Selenium, MySQL, AWS, GIT and BDD" },
+]
 export const contactData = [
     {
       url: "https://github.com/varunmsd99",
@@ -62,4 +71,29 @@ export const contactData = [
       text: "follow me on X",
       subtext: "follow me",
     },
-  ]
+]
+export const ProjectData = [
+  {
+    title: "FoodVilla",
+    subtitle: "A Swiggy Look-a-like Food Ordering Website",
+    img: foodVilla,
+    summary: "This is a react app built using the live Swiggy API's and various other trending technologies like Tailwind CSS as a Styling Framework, Redux for state management, React Router DOM for page navigation, Parcel as a bundler, Babel for transpiling code and many more.",
+    techs: ["React, Redux, React Router, TailwindCSS"],
+    githubLink: "https://github.com/varunmsd99/FoodVillaNamasteReact",
+    projectLink: "https://food-villa-react-app.netlify.app/",
+  },
+  {
+    title: "3D Portfolio",
+    subtitle: "A 3D personal portfolio",
+    img: portfolio,
+    summary: "This project is a 3D responsive portfolio website with 3D elements using Spline3D, Reactjs and Tailwind CSS showcasing a collection of personal projects and professional experiences.",
+    techs: ["React, Spline 3D, React Scroll, TailwindCSS"],
+    githubLink: "https://github.com/varunmsd99/MyPortfolio",
+    projectLink: "https://varun-vk.netlify.app/",
+  }
+]
+export const ExperienceData = [
+  {
+    img: wipro,
+  }
+]
