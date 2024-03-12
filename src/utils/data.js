@@ -31,7 +31,10 @@ export const HeaderData = [
 export const UserData = {
   name: "Varun Kumar",
   title: "Front End Developer . Tech Enthusiast",
-  about: "I am based out of Vizag, the city of Destiny from Andhra Pradesh. I am currently working as a Software Engineer at Wipro with around 2+ years of experience. I have expertise in frontend technologies like JavaScript, React and few utilitarian libraries useful for development. I believe in hard work and am passionate about open source. I Love learning new stuff every day and growing in this field, and I am confident that my unique perspective, skills and abilities will make me a valuable asset to any team.",
+  about: [
+    "I am based out of Vizag, the city of Destiny. I am currently working as a Software Engineer at Wipro with around 2+ years of experience. I have expertise in frontend technologies like JavaScript, React and few utilitarian libraries useful for development. I am passionate about open source.",
+    "I believe in hard work and to be successful in life, one needs to be obsessive with their dreams and keep working towards them. I am confident that my unique perspective, skills and abilities will make me a valuable asset to any team."
+  ],
   links: [
     {
       text:"Contact me",
@@ -45,8 +48,8 @@ export const UserData = {
 }
 export const SkillsData = [
   { title: "Languages", text: "JS, TS, Java and C." },
-  { title: "Markup Languages", text: "HTML and CSS." },
   { title: "Libraries", text: "React and TailwindCSS." },
+  { title: "Markup Languages", text: "HTML and CSS." },
   { title: "Other", text: "Selenium, MySQL, AWS, GIT and BDD" },
 ]
 export const contactData = [

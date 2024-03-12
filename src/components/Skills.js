@@ -1,5 +1,5 @@
 import React from 'react';
-import SplineKeyboard from './SplineObject';
+import SplineKeyboard from './SplineKeyboard';
 import { SkillsData } from '../utils/data';
 
 const Skills = () => {
