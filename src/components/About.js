@@ -11,7 +11,7 @@ const About = () => {
           <img src={face} alt='face' className='max-w-[33vw] md:max-w-[75vw] rounded-full'/>
         </div>
         <div className='flex-1 flex justify-center flex-col'>
-          <div className='bg-[#f6f6f9be] backdrop-blur-md shadow-[0px_4px_24px_1px_#d4d5d9] m-5 p-6 md:p-4 text-clip text-[#5e5f61] rounded-3xl indent-10'>
+          <div className='bg-[#f6f6f9be] backdrop-blur-md shadow-[0px_1px_4px_2px_#d4d5d9] m-5 p-6 md:p-4 text-clip text-[#5e5f61] rounded-3xl indent-10'>
             <div className='flex items-baseline text-xl font-light pt-6'> Hi, I'm &nbsp;<h1 className='indent-0 text-3xl font-extrabold bg-[linear-gradient(to_right,#eca658,#f391a6,#e188c3,#a58de3,#56abec,#737eb7,#c8638c,#dd5d57,#df6c51)] bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient'>{UserData.name}</h1></div>
               {UserData.about.map((x) => {
                 return(<h1 className='pt-3 font-light' key={x}>{x}</h1>)
