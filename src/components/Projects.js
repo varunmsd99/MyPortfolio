@@ -1,9 +1,15 @@
 import React from 'react'
+import { ProjectData } from '../utils/data'
 
 const Projects = () => {
   return (
-    <div id='projects' className='min-h-[100dvh] bg-white pt-10'>
-
+    <div id='projects' className='min-h-[100dvh] bg-white pt-10 flex md:flex-col'>
+        {ProjectData.map((x) => {
+          return(
+          <div className='flex-1'>
+            <img src={x.img} alt={x.title} className='object-cover' />
+          </div>)
+        })}
     </div>
   )
 }

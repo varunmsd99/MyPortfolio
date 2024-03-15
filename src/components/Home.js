@@ -9,7 +9,7 @@ import DateTimeDisplay from "../utils/getDate";
 const Home = () => {
 
   return (
-    <div className="min-h-[100dvh] max-h-fit bg-black flex flex-col" id="home">
+    <div className="min-h-[100dvh] max-h-fit bg-[#070200fe] flex flex-col" id="home">
       <div className="flex-1 flex items-center justify-between flex-col md:mt-12">
         <div className="flex-1 flex items-center w-[60vw] md:w-screen">
           <SplineHome />
