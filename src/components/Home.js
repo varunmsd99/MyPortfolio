@@ -14,8 +14,8 @@ const Home = () => {
         <div className="flex-1 flex items-center w-[60vw] md:w-screen">
           <SplineHome />
         </div>
-        <div className="flex flex-1 flex-col items-center text-white -mt-12">
-          <h1 className="font-black text-7xl md:text-5xl tracking-wider">{UserData.name}</h1>
+        <div className="flex flex-1 flex-col items-center text-white -mt-8">
+          <span className="flex items-baseline md:flex-col md:items-center"><h2 className="font-gluten text-3xl">Hi, I'm &nbsp;</h2><h1 className="text-center text-7xl tracking-wider font-bungee-spice">{UserData.name}</h1></span>
           <h2 className="pt-3 text-2xl md:text-xl md:mt-2">{UserData.title}</h2>
           <div className="flex md:mt-1">
           {UserData.links.map((x) => {

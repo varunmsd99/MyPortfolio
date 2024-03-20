@@ -45,7 +45,7 @@ const Header = () => {
       <div
         className={`${
           nav ? `translate-y-0`
-            : "-translate-y-full"
+            : "-translate-y-full overflow-hidden"
         } fixed h-[100dvh] left-0 top-0 w-full bg-black flex flex-col items-center duration-300`}
       >
         <X

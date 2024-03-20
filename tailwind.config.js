@@ -18,6 +18,11 @@ module.exports = {
         md: {'max': '829px'},
         sm: {'max': '575px'},
       },
+      fontFamily: {
+        'bungee-spice': ['Bungee Spice', 'sans-serif'],
+        'gluten': ['Gluten', 'cursive'],
+        'pacifico': ['Pacifico', 'cursive'],
+      },
     }
     },
   plugins: [],
