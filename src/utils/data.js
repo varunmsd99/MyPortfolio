@@ -30,7 +30,7 @@ export const HeaderData = [
 ];
 export const UserData = {
   name: "Varun Kumar",
-  title: "Front End Developer . Tech Enthusiast",
+  title: ["Front End Developer ", "Tech Enthusiast"],
   about: [
     "I am based out of Vizag, the city of Destiny. I am currently working as a Software Engineer at Wipro with around 2+ years of experience. I have expertise in frontend technologies like JavaScript, React and few utilitarian libraries useful for development. I am passionate about open source.",
     "I believe in hard work and to be successful in life, one needs to be obsessive with their dreams and keep working towards them. I am confident that my unique perspective, skills and abilities will make me a valuable asset to any team."

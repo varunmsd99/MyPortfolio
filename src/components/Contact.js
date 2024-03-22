@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="min-h-[100dvh] bg-white py-10 flex flex-col justify-center"
+      className="min-h-screen bg-white py-10 flex flex-col justify-center"
     >
       <p className="text-7xl font-black text-center mb-16 md:mb-10 text-clip">
         <span className="bg-[linear-gradient(to_right,#eca658,#f391a6,#e188c3,#a58de3,#56abec,#737eb7,#c8638c,#dd5d57,#df6c51)] bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient">

@@ -15,12 +15,12 @@ const Header = () => {
         spy={true}
         smooth={true}
         duration={500}
-        className="self-center mx-5 cursor-pointer h-full"
+        className="flex items-center p-1 mx-5 cursor-pointer h-full"
       >
         <img
           src={logo}
           alt="logo"
-          className="h-[90%] transition-transform duration-300 ease-cubic-bezier(.215,.61,.355,1) hover:scale-110"
+          className="h-[67%] transition-transform duration-300 ease-cubic-bezier(.215,.61,.355,1) hover:scale-110"
         />
       </Link>
       <div className="flex items-center md:hidden">
@@ -32,7 +32,7 @@ const Header = () => {
               smooth={true}
               duration={500}
               key={x.id}
-              className="text-[#dfdfdf] mx-5 text-xs leading-4 cursor-pointer hover:text-white"
+              className="text-[#dfdfdf] font-cutive mx-5 tracking-tighter leading-4 cursor-pointer hover:text-white"
             >
               {x.text}
             </Link>
@@ -65,7 +65,7 @@ const Header = () => {
               duration={1000}
               key={x.id}
               onClick={toggleNav}
-              className="text-[#dfdfdf] text-2xl font-light mx-8 my-4 tracking-wide leading-5 cursor-pointer hover:text-white"
+              className="text-[#dfdfdf] font-cutive text-2xl font-light mx-8 my-4 tracking-wide leading-5 cursor-pointer hover:text-white"
             >
               {x.text}
             </Link>
