@@ -21,10 +21,8 @@ module.exports = {
       fontFamily: {
         'honk': ['Honk', 'system-ui'],
         'bungee-spice': ['Bungee Spice', 'sans-serif'],
-        'gluten': ['Gluten', 'cursive'],
-        'pacifico': ['Pacifico', 'cursive'],
         'montecarlo': ['MonteCarlo', 'cursive'],
-        'cutive': ['Cutive Mono', 'monospace'],
+        'jura': ['Jura', 'sans-serif'],
       },
     }
     },

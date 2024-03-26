@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div id='projects' className='min-h-screen bg-white pt-10 flex flex-col'>
       <h1 className='text-4xl font-honk my-4 ml-10 tracking-wide'>Projects</h1>
-      <div className='flex'>
+      <div className='flex md:flex-col'>
       {ProjectData.map((x) => {
           return(
           <div className='flex-1' key={x.title}>

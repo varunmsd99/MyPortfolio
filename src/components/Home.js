@@ -14,23 +14,23 @@ const Home = () => {
         </div>
         <div className="flex flex-1 flex-col items-center text-white -mt-8">
           <span className="flex items-center md:flex-col md:items-center"><h2 className="font-montecarlo text-5xl">I'm &nbsp;</h2><h1 className="text-center text-7xl tracking-wider font-bungee-spice">{UserData.name}</h1></span>
-          <div className="flex md:flex-col items-center">
+          <div className="flex md:flex-col items-center mt-5">
             {UserData.title.map((x)=> {
               return(
-                <h2 key={x} className="pt-3 text-2xl md:text-xl md:mt-2 font-cutive pr-2">{x}</h2>
+                <h2 key={x} className="text-2xl font-jura tracking-wide md:text-xl font-light pr-2">{x}</h2>
               )
             })}
           </div>
-          <div className="flex md:mt-1">
+          <div className="flex my-5">
           {UserData.links.map((x) => {
             return(x.url.includes('/') ? (
               <a href={x.url} key={x.text} target="_blank" rel="noopener noreferrer" className="flex cursor-pointer text-sm text-[#2997ff] items-center pt-3 mx-3">
-                <h2 className="self-baseline text-center tracking-tight text-base pr-1 font-cutive">{x.text}</h2>
-                <ChevronRight color="#2997ff" size={16} strokeWidth={2} className="" />
+                <h2 className="self-baseline text-center text-base pr-1 font-jura tracking-wide ">{x.text}</h2>
+                <ChevronRight color="#2997ff" size={16} strokeWidth={2} className="mt-1" />
               </a>) : (
               <Link to={x.url} key={x.text} target="_blank" spy={true} smooth={true} duration={500} className="flex cursor-pointer text-sm text-[#2997ff] items-center pt-3 mx-3">
-                <h2 className="self-baseline text-center text-base tracking-tight pr-1 font-cutive">{x.text}</h2>
-                <ChevronRight color="#2997ff" size={16} strokeWidth={2} className="" />
+                <h2 className="self-baseline text-center text-base pr-1 font-jura tracking-wide ">{x.text}</h2>
+                <ChevronRight color="#2997ff" size={16} strokeWidth={2} className="mt-1" />
               </Link>))
           })}
           </div>

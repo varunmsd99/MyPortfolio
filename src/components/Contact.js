@@ -9,8 +9,8 @@ const Contact = () => {
       id="contact"
       className="min-h-screen bg-white py-10 flex flex-col justify-center"
     >
-      <p className="text-7xl font-black text-center mb-16 md:mb-10 text-clip">
-        <span className="bg-[linear-gradient(to_right,#eca658,#f391a6,#e188c3,#a58de3,#56abec,#737eb7,#c8638c,#dd5d57,#df6c51)] bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient">
+      <p className="text-6xl font-black text-center mb-16 md:my-8">
+        <span className="text-clip font-bungee-spice bg-[linear-gradient(to_right,#eca658,#f391a6,#e188c3,#a58de3,#56abec,#737eb7,#c8638c,#dd5d57,#df6c51)] bg-clip-text text-transparent bg-[length:200%_200%] animate-gradient">
           Let's Work Together
         </span>
       </p>
@@ -22,8 +22,8 @@ const Contact = () => {
               className="flex flex-col items-center px-2 min-w-36"
             >
               {x.icon}
-              <h1 className="font-semibold text-lg text-center">{x.name}</h1>
-              <h3 className="font-normal text-sm text-[#707070] text-center">
+              <h1 className="font-bold text-lg text-center font-jura tracking-wide">{x.name}</h1>
+              <h3 className="font-semibold text-sm text-[#7c7c7c] text-center font-jura tracking-wide">
                 {x.text}
               </h3>
               <Link
@@ -31,7 +31,7 @@ const Contact = () => {
                 target="_blank"
                 className="flex cursor-pointer text-sm text-[#2997ff] items-center"
               >
-                <p className="self-baseline text-center">{x.subtext}</p>
+                <p className="self-baseline text-center font-jura tracking-wide font-bold">{x.subtext}</p>
                 <ChevronRight
                   color="#2997ff"
                   size={14}
@@ -43,11 +43,11 @@ const Contact = () => {
           );
         })}
       </div>
-      <p className="text-center text-xs pb-8">or</p>
-      <p className="text-center text-sm">send an email at</p>
+      <p className="text-center text-sm pb-8 font-jura tracking-wide">or</p>
+      <p className="text-center text-sm font-jura tracking-wide font-semibold">send an email at</p>
       <div className="flex justify-center">
         <Mail color="#707070" strokeWidth={1} className="pr-2" />
-        <p className="text-[#2997ff] text-sm">varunpelluru@gmail.com</p>
+        <p className="text-[#2997ff] text-sm font-jura tracking-wide font-semibold">varunpelluru@gmail.com</p>
       </div>
     </div>
   );
