@@ -25,7 +25,7 @@ module.exports = {
         'jura': ['Jura', 'sans-serif'],
         'tilt-neon': ['Tilt Neon', 'sans-serif'],
         'tilt-warp': ['Tilt Warp', 'sans-serif'],
-        'tilt-prism': ['Tilt Prism', 'sans-serif'],
+        'big-shoulder': ['Big Shoulders Stencil Display', 'sans-serif'],
       },
     }
     },

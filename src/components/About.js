@@ -11,7 +11,7 @@ const About = () => {
           <img src={face} alt='face' className='max-w-[33vw] md:max-w-[75vw] rounded-full'/>
         </div>
         <div className='flex-1 flex justify-center flex-col'>
-          <div className='shadow-[0px_1px_4px_2px_#d4d5d9] m-5 text-clip text-[#727274] rounded-lg'>
+          <div className='shadow-[0px_1px_4px_2px_#d4d5d9] m-6 text-clip text-[#727274] rounded-lg'>
             <div className='h-[1.75rem] bg-[#e5e7eb] flex items-center rounded-t-lg left-0 space-x-2 px-2'>
               <div className='w-[1rem] h-[1rem] bg-red-500 rounded-full' />
               <div className='w-[1rem] h-[1rem] bg-yellow-500 rounded-full' />
@@ -23,7 +23,7 @@ const About = () => {
               <div className='invisible w-[1rem] h-[1rem]' />
               <div className='invisible w-[1rem] h-[1rem]' />
             </div>
-            <div className='flex flex-col p-8 md:p-6'>
+            <div className='flex flex-col p-6 md:p-3'>
               <h1 className='pt-3 font-light indent-10 text-clip text-[1rem] font-jura'>{UserData.about}</h1>
               <div className='flex mt-4 justify-evenly md:flex-col'>
                 <div className='flex-1 flex flex-col items-center p-2 mr-6 rounded-xl border-2 border-[#f3f4f6] md:w-full md:mb-6'>

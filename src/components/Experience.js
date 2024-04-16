@@ -10,7 +10,7 @@ const Experience = () => {
           <h1>Work Experience</h1>
           {ExperienceData.map((x) => {
             return(
-            <div className='flex'>
+            <div className='flex mb-2 p-2 border-2 border-[#f3f4f6] rounded-xl'>
               <img src={x.img} alt='img' className='h-[4rem] w-[4rem] bg-white p-1 rounded-full' />
               <div>
                 <h1>{x.role}</h1>
@@ -27,7 +27,7 @@ const Experience = () => {
           <h1>Education</h1>
           {EducationData.map((x) =>{
             return(
-              <div className='flex'>
+              <div className='flex mb-2 p-2 border-2 border-[#f3f4f6] rounded-xl'>
                 <img src={x.image} alt='img' className='h-[4rem] w-[4rem] bg-white p-1 rounded-full' />
                 <div>
                   <h1>{x.stream}</h1>
