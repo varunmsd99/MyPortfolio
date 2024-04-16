@@ -1,7 +1,11 @@
-import { Linkedin, GithubIcon, Twitter} from 'lucide-react'
+import { Linkedin, GithubIcon, Twitter, Code, MonitorSmartphone, Compass, Soup, Gamepad2, AppWindow, AudioLines} from 'lucide-react'
 import foodVilla from '../images/foodVilla.png'
 import portfolio from '../images/portfolio.png'
 import wipro from '../images/wipro.png'
+import school from '../images/school.png'
+import inter from '../images/inter.png'
+import mvgr from '../images/mvgr.png'
+
 export const HeaderData = [
   {
     id: "home",
@@ -32,10 +36,39 @@ export const UserData = {
   name: "Varun Kumar",
   title: ["Front End Developer ", " & ", "Tech Enthusiast"],
   about: [
-    "I am based out of Vizag, the city of Destiny. I am currently working as a Software Engineer at Wipro with around 2+ years of experience.",
-    "I have expertise in frontend technologies like JavaScript, React and few utilitarian libraries useful for development. I am passionate about open source.",
-    "I believe in hard work and to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
-    "I am confident that my unique perspective, skills and abilities will make me a valuable asset to any team."
+    "Skilled frontend developer with expertise in HTML, CSS, JavaScript, React and few utilitarian libraries to deliver visually stunning and user-friendly web interfaces. My unique perspective, skills and abilities will make me a valuable asset to any team."
+  ],
+  WhatIDo: [
+    {
+      title: "Web Development",
+      icon: <MonitorSmartphone color='#ffffff' strokeWidth={1} className='h-[2rem] w-[2rem] px-1 bg-[#3B82F6] rounded-full' />
+    },
+    {
+      title: "UI/UX Web Design",
+      icon: <AppWindow color='#ffffff' strokeWidth={1} className='h-[2rem] w-[2rem] px-1 bg-[#3B82F6] rounded-full' />
+    },
+    {
+      title: "Open-Source Contribution",
+      icon: <Code color='#ffffff' strokeWidth={1} className='h-[2rem] w-[2rem] px-1 bg-[#3B82F6] rounded-full' />
+    },
+  ],
+  Interests: [
+    {
+      title: "Explore",
+      icon: <Compass color='#ffffff' strokeWidth={1} className='h-[2rem] w-[2rem] px-1 bg-[#3B82F6] rounded-full' />
+    },
+    {
+      title: "Food",
+      icon: <Soup color='#ffffff' strokeWidth={1} className='h-[2rem] w-[2rem] px-1 bg-[#3B82F6] rounded-full' />
+    },
+    {
+      title: "Music",
+      icon: <AudioLines color='#ffffff' strokeWidth={1} className='h-[2rem] w-[2rem] px-1 bg-[#3B82F6] rounded-full' />
+    },
+    {
+      title: "Gaming",
+      icon: <Gamepad2 color='#ffffff' strokeWidth={1} className='h-[2rem] w-[2rem] px-1 bg-[#3B82F6] rounded-full' />
+    },
   ],
   links: [
     {
@@ -89,7 +122,7 @@ export const ProjectData = [
   },
   {
     title: "3D Portfolio",
-    subtitle: "A 3D personal portfolio",
+    subtitle: "A personal portfolio website made using React",
     img: portfolio,
     summary: "This project is a 3D responsive portfolio website with 3D elements using Spline3D, Reactjs and Tailwind CSS showcasing a collection of personal projects and professional experiences.",
     techs: ["React, Spline 3D, React Scroll, TailwindCSS"],
@@ -99,6 +132,34 @@ export const ProjectData = [
 ]
 export const ExperienceData = [
   {
+    role: "Project Engineer",
+    name: "Wipro",
+    duration: "Mar-21 - Present",
+    description: "Working as a Automation Engineer for Payment Execution for end-to-end testing of payments for renowned Bank of UK",
+    skills: "Selenium, BDD, GIT, Postman API Testing, UFT, JIRA",
     img: wipro,
   }
+]
+export const EducationData = [
+  {
+    stream: "Bachelor of Technology - Electrical and Electronics Engineering",
+    name: "MVGR College of Engineering(A)",
+    duration: "2016 - 2020",
+    description: "Completed B. Tech. in Electrical and Electronics Engineering (EEE) with a CGPA of 8.79",
+    image: mvgr,
+  },
+  {
+    role: "Higher Secondary Education - MPC",
+    name: "Sri Chaitanya Juniot college",
+    duration: "2014 - 2016",
+    description: "Completed Higher Secondary Education in MPC domain with a score of 95.7%",
+    image: inter,
+  },
+  {
+    role: "Secondary Education - ICSE",
+    name: "St. Ann's English Medium School",
+    duration: "2004 - 2014",
+    description: "Completed Secondary Education in ICSE with a score of 84.6%",
+    image: school,
+  },
 ]

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'gradient': 'gradient 5s ease infinite both',
+        'gradient': 'gradient 8s ease infinite both',
       },
       keyframes: {
         'gradient': {
@@ -23,6 +23,9 @@ module.exports = {
         'bungee-spice': ['Bungee Spice', 'sans-serif'],
         'montecarlo': ['MonteCarlo', 'cursive'],
         'jura': ['Jura', 'sans-serif'],
+        'tilt-neon': ['Tilt Neon', 'sans-serif'],
+        'tilt-warp': ['Tilt Warp', 'sans-serif'],
+        'tilt-prism': ['Tilt Prism', 'sans-serif'],
       },
     }
     },
