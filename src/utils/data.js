@@ -149,14 +149,14 @@ export const EducationData = [
     image: mvgr,
   },
   {
-    stream: "Higher Secondary Education - MPC",
+    stream: "Intermediate - MPC",
     name: "Sri Chaitanya Junior college",
     duration: "2014 - 2016",
     description: "Completed Higher Secondary Education in MPC domain with a score of 95.7%",
     image: inter,
   },
   {
-    stream: "Secondary Education - ICSE",
+    stream: "Secondary School - ICSE",
     name: "St. Ann's English Medium School",
     duration: "2004 - 2014",
     description: "Completed Secondary Education in ICSE with a score of 84.6%",

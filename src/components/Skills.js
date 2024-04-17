@@ -7,8 +7,9 @@ const Skills = () => {
     <div id='skills' className='min-h-screen bg-black text-white pt-12 px-12 pb-10 md:px-0 flex flex-col'>
       <h1 className='text-4xl font-honk my-4 ml-6 tracking-wide'>Skills</h1>
       <div className='h-full flex-1 flex items-center md:flex-col'>
-        <div className='flex-1 flex items-center justify-center w-full h-full'>
+        <div className='flex-1 flex flex-col items-center justify-center w-full h-full'>
           <SplineKeyboard />
+          <h3 className='text-xs text-[#86868b]'>Press "J, T, R, W, 5, 3" or click(tap)</h3>
         </div>
         <div className='flex-1 flex flex-col border-2 border-gray-700 rounded-xl m-6'>
           <div className='h-[1.75rem] bg-[#374151] flex items-center rounded-t-lg left-0 space-x-2 px-2'>
