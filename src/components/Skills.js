@@ -5,7 +5,7 @@ import { SkillsData } from '../utils/data';
 const Skills = () => {
   return (
     <div id='skills' className='min-h-screen bg-black text-white pt-12 px-12 pb-10 md:px-0 flex flex-col'>
-      <h1 className='text-4xl font-honk my-4 ml-10 tracking-wide'>Skills</h1>
+      <h1 className='text-4xl font-honk my-4 ml-6 tracking-wide'>Skills</h1>
       <div className='h-full flex-1 flex items-center md:flex-col'>
         <div className='flex-1 flex items-center justify-center w-full h-full'>
           <SplineKeyboard />

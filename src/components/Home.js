@@ -1,7 +1,6 @@
 import React from "react";
 import SplineHome from "./SplineHome";
 import { UserData } from "../utils/data";
-import { ChevronRight } from "lucide-react";
 import { Link } from "react-scroll";
 
 const Home = () => {
@@ -25,12 +24,10 @@ const Home = () => {
           {UserData.links.map((x) => {
             return(x.url.includes('/') ? (
               <a href={x.url} key={x.text} target="_blank" rel="noopener noreferrer" className="flex cursor-pointer text-sm text-[#2997ff] items-center pt-3 mx-3">
-                <h2 className="self-baseline text-center text-base pr-1 font-jura tracking-wide ">{x.text}</h2>
-                <ChevronRight color="#2997ff" size={16} strokeWidth={2} className="mt-1" />
+                <h2 className="self-baseline text-center tracking-wider text-[#0071E3] border-[1px] border-[#0071E3] py-2 px-4 rounded-full hover:text-white hover:bg-[#0071FF]">{x.text}</h2>
               </a>) : (
               <Link to={x.url} key={x.text} target="_blank" spy={true} smooth={true} duration={500} className="flex cursor-pointer text-sm text-[#2997ff] items-center pt-3 mx-3">
-                <h2 className="self-baseline text-center text-base pr-1 font-jura tracking-wide ">{x.text}</h2>
-                <ChevronRight color="#2997ff" size={16} strokeWidth={2} className="mt-1" />
+                <h2 className="self-baseline text-center tracking-wide text-white bg-[#0071E3] border-[1px] border-[#0071E3] py-2 px-4 rounded-full hover:bg-[#0071FF] hover:border-[#0071FF] ">{x.text}</h2>
               </Link>))
           })}
           </div>

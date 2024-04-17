@@ -142,21 +142,21 @@ export const ExperienceData = [
 ]
 export const EducationData = [
   {
-    stream: "Bachelor of Technology - Electrical and Electronics Engineering",
+    stream: "B. Tech - EEE",
     name: "MVGR College of Engineering(A)",
     duration: "2016 - 2020",
     description: "Completed B. Tech. in Electrical and Electronics Engineering (EEE) with a CGPA of 8.79",
     image: mvgr,
   },
   {
-    role: "Higher Secondary Education - MPC",
+    stream: "Higher Secondary Education - MPC",
     name: "Sri Chaitanya Junior college",
     duration: "2014 - 2016",
     description: "Completed Higher Secondary Education in MPC domain with a score of 95.7%",
     image: inter,
   },
   {
-    role: "Secondary Education - ICSE",
+    stream: "Secondary Education - ICSE",
     name: "St. Ann's English Medium School",
     duration: "2004 - 2014",
     description: "Completed Secondary Education in ICSE with a score of 84.6%",

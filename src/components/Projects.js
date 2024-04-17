@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Projects = () => {
   return (
     <div id='projects' className='min-h-screen bg-white pt-10 flex flex-col'>
-      <h1 className='text-4xl font-honk my-4 ml-10 tracking-wide'>Projects</h1>
+      <h1 className='text-4xl font-honk my-4 ml-6 tracking-wide'>Projects</h1>
       <div className='flex md:flex-col m-4'>
       {ProjectData.map((x, count) => {
           return(
@@ -19,8 +19,8 @@ const Projects = () => {
               <h2 className='text-[#0071E3] font-jura text-sm'>{x.techs}</h2>
             </div>
             <div className='flex justify-center items-center gap-4 my-6'>
-              <Link to={x.githubLink} className='text-white bg-[#0071E3] border-[1px] border-[#0071E3] py-1 px-3 rounded-full hover:bg-[#0071FF] hover:border-[#0071FF]'>GitHub Link</Link>
-              <Link to={x.projectLink} className='text-[#0071E3] border-[1px] border-[#0071E3] py-1 px-3 rounded-full hover:text-white hover:bg-[#0071FF]'>Live Demo</Link>
+              <Link to={x.githubLink} className='text-white bg-[#0071E3] text-sm border-[1px] border-[#0071E3] py-2 px-4 rounded-full hover:bg-[#0071FF] hover:border-[#0071FF]'>GitHub Link</Link>
+              <Link to={x.projectLink} className='text-[#0071E3] text-sm border-[1px] border-[#0071E3] py-2 px-4 rounded-full hover:text-white hover:bg-[#0071FF]'>Live Demo</Link>
             </div>
             <img src={x.img} alt={x.title} className='object-cover rounded-xl border-2 border-[#e5e7eb]' />
           </div>)
