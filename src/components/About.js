@@ -8,7 +8,7 @@ const About = () => {
       <h1 className='text-[2.25rem] font-honk mt-4 ml-6 tracking-wide'>About</h1>
       <div className='flex flex-1 md:flex-col'>
         <div className='md:flex-none flex items-center justify-center'>
-          <img src={face} alt='face' className='max-w-[33vw] md:max-w-[75vw] rounded-full'/>
+          <img src={face} alt='face' className='max-w-[39vw] md:max-w-[75vw] rounded-full'/>
         </div>
         <div className='flex-1 flex justify-center flex-col'>
           <div className='shadow-[0px_1px_4px_2px_#d4d5d9] m-6 text-clip text-[#727274] rounded-lg'>
@@ -24,7 +24,7 @@ const About = () => {
               <div className='invisible w-[1rem] h-[1rem]' />
             </div>
             <div className='flex flex-col p-6 md:p-3'>
-              <h1 className='pt-3 font-light indent-10 text-clip text-[1rem] font-jura'>{UserData.about}</h1>
+              <h1 className='pt-3 font-light indent-10 text-clip text-[1rem] font-jura md:p-2'>{UserData.about}</h1>
               <div className='flex mt-4 justify-evenly md:flex-col'>
                 <div className='flex-1 flex flex-col items-center p-2 mr-6 rounded-xl border-2 border-[#f3f4f6] md:w-full md:mb-6'>
                   <h1 className='font-jura text-black text-[1.25rem]'>What I do</h1>
